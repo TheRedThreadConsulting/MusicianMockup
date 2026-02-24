@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Lore of the Leaves | The Singing Leaves</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;family=Pirata+One&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8a1c1c",
+                        "glow": "#d2c5b1",
+                        "background-dark": "#080a08",
+                        "forest-deep": "#0d140d",
+                        "parchment": "#d2c5b1",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "gnarled": ["UnifrakturMaguntia", "serif"],
+                        "ritual": ["Pirata One", "system-ui"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .textured-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBe9NfJXfCRgEU3vsRAhAuPRCeKoyt_zus8NfRLzJGb-DlzTudryUvaadCEfOicSm4o8y7_FuuCRFeQp4LWzzXX3YKtkfDS7ejRF73LJNd8O8W5Y0NBrFlZORuqZ2VpCNLtDOVLx7rtijM9VBzC1IsDFC8uMfoHU5AJPqGdwMzRHtOwDSHGDn5_cRRkOwlIn_vAxUEt_3W82isZK34S1gOFWwrtzZ2ROYt0LnyeIE5LdRj3AU5VkxeZKh46Kt1Gtq0ji-xmQETAhfqO);
+            opacity: 0.15;
+            mix-blend-mode: multiply;
+        }
+        .parchment-text {
+            color: #d2c5b1;
+        }
+        .mist-gradient {
+            background: linear-gradient(to bottom, rgba(8, 10, 8, 0) 0%, rgba(8, 10, 8, 0.8) 70%, #080a08 100%);
+        }
+        .gnarled-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d2c5b133, transparent);
+            position: relative;
+        }
+        .gnarled-divider::after {
+            content: 'park';
+            font-family: 'Material Symbols Outlined';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #080a08;
+            padding: 0 1rem;
+            color: #d2c5b144;
+            font-size: 1.5rem;
+        }
+        .column-drop-cap::first-letter {
+            font-family: 'UnifrakturMaguntia', serif;
+            font-size: 4rem;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            color: #d2c5b1;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-100 overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="fixed top-0 z-50 w-full flex items-center justify-between border-b border-white/5 bg-background-dark/90 backdrop-blur-md px-6 py-4 md:px-20">
+<div class="flex items-center gap-4 text-parchment">
+<span class="material-symbols-outlined text-4xl">eco</span>
+<h2 class="font-ritual text-2xl tracking-[0.1em] uppercase">The Singing Leaves</h2>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="parchment-text text-sm font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">filter_vintage</span> Root
+            </a>
+<a class="parchment-text text-sm font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">nights_stay</span> Rituals
+            </a>
+<a class="parchment-text text-sm font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">auto_stories</span> Lore
+            </a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded bg-white/5 hover:bg-white/10 transition-all text-parchment">
+<span class="material-symbols-outlined">fluid</span>
+</button>
+<button class="md:hidden p-2 text-slate-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-24">
+<section class="relative h-[70vh] w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Band members in furs and antlers standing in a misty, dark forest" class="h-full w-full object-cover grayscale brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAubdpGad0-NxCjDcdoW_l_HU_ykDNWiRQlq4rmNVuD2Ow8TnK7S3QvsSlMRtQnFhrhEd1uQ6F1lJUTC6_w8EWofLBxLHfjxUlPdfD9mVzE5xM4bchfliY7NxGbnNuh6RHSYbf1pLdJT7UlpDs5SzI7XW5VRy1IPg2klYRlEfiDxUz-kVDdQoCYj38H5-DMWDUtxLfsLFG3dUtIpg-SDW2mzot4hto4OuwwI8w-G6li77HqXk1UI1i0ITcWcuUBiTOIFmJ8krlwrhnL"/>
+<div class="absolute inset-0 mist-gradient z-10"></div>
+<div class="absolute inset-0 bg-black/20 z-10"></div>
+<div class="absolute inset-0 textured-overlay z-20"></div>
+</div>
+<div class="relative z-30 h-full flex flex-col items-center justify-end pb-16 px-4">
+<h1 class="font-gnarled text-6xl md:text-9xl text-slate-100 tracking-tight text-center">The Lore of the Leaves</h1>
+<div class="mt-8 flex items-center gap-6 opacity-40">
+<span class="h-px w-24 bg-parchment"></span>
+<span class="material-symbols-outlined text-parchment">forest</span>
+<span class="h-px w-24 bg-parchment"></span>
+</div>
+</div>
+</section>
+<section class="relative py-24 px-6 md:px-20 bg-background-dark">
+<div class="absolute inset-0 textured-overlay opacity-10 pointer-events-none"></div>
+<div class="max-w-6xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
+<div class="space-y-8">
+<h2 class="font-ritual text-4xl text-parchment uppercase tracking-widest mb-12">Amplified History</h2>
+<div class="parchment-text text-lg leading-relaxed space-y-6 opacity-80 italic">
+<p class="column-drop-cap">
+                                The Singing Leaves do not merely perform music; we exhume it. Our philosophy of 'amplified history' is a reclamation of the sonic echoes left by those who walked the marshes and mountains before the age of iron. It is a belief that the land remembers every ritual, every breath, and every lament ever whispered into the wind.
+                            </p>
+<p>
+                                Born from the damp earth of the northern forests, our collective was forged during a solstice gathering where the silence was deemed too heavy to remain unbroken. We utilize instruments that are artifacts in their own right—relics of bone, weathered oak, and hand-beaten bronze—to bridge the gap between the ancestral and the electronic.
+                            </p>
+</div>
+</div>
+<div class="space-y-8">
+<div class="aspect-[4/5] overflow-hidden border border-white/10 group relative">
+<img alt="Ritualistic instrument detail" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAariUKGgDnEnj85tD81wt4PSAskX4PsVscPpdrju6MXsrOUz-6SG7Nl4QX3qhvqAIlqRjqi47_Zfq1n5Wtc4s2dgJAyIl3UBUnKYvszsVMQm3-e6Lfm5a5UuRg_t_LKzPD7DTQi8FZlCvz3caESWpScQ62PMBsqP8iPt8yJS_7uusD5ZSKU0ytUD6rpiJl0hOmq3Z2M02eHXQtypfagWEqITa_GGPnHVCYDQ0afAEEHoJtaX2UqjqFjFlbnuvbrR7vgja55g4sds7O"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+</div>
+<div class="parchment-text text-lg leading-relaxed space-y-6 opacity-80 italic">
+<p>
+                                Our rites are conducted in the absence of traditional stages. We prefer the natural amphitheatres of caves, the rhythmic drip of stalactites, and the crackle of ritual fires. In these spaces, the 'amplification' is not just of sound, but of intent. We invite the listener to descend with us into the roots of the world, where time is circular and the leaves never stop singing.
+                            </p>
+<p>
+                                Through our latest recordings, 'The Whisper of Oak', we explored the specific vibrational frequency of ancient timber. Each note is a grain of wood translated into a frequency, a sonic map of a tree's three-hundred-year vigil over the grove.
+                            </p>
+</div>
+</div>
+</div>
+<div class="my-32 gnarled-divider"></div>
+<div class="text-center max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-parchment/40 text-5xl mb-8">psychology_alt</span>
+<h3 class="font-gnarled text-4xl text-slate-100 mb-8">The Circle of Intent</h3>
+<p class="parchment-text text-xl font-light leading-loose opacity-70">
+                        "We are but vessels for the stories that the stones cannot speak. Our purpose is to be the friction that reignites the ancient fire in the modern soul."
+                    </p>
+<div class="mt-12 flex justify-center gap-12">
+<div class="text-center">
+<span class="block text-parchment font-ritual text-3xl">XII</span>
+<span class="text-[10px] tracking-[0.3em] uppercase opacity-40">Years of Ritual</span>
+</div>
+<div class="text-center border-x border-white/10 px-12">
+<span class="block text-parchment font-ritual text-3xl">IV</span>
+<span class="text-[10px] tracking-[0.3em] uppercase opacity-40">Sacred Relics</span>
+</div>
+<div class="text-center">
+<span class="block text-parchment font-ritual text-3xl">∞</span>
+<span class="text-[10px] tracking-[0.3em] uppercase opacity-40">Ancestral Threads</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#050605] border-t border-white/5 py-16 px-6 md:px-20 relative">
+<div class="absolute inset-0 textured-overlay opacity-5 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 relative z-10">
+<div class="flex items-center gap-4 text-parchment opacity-40 hover:opacity-100 transition-opacity cursor-default">
+<span class="material-symbols-outlined text-4xl">eco</span>
+<h2 class="text-slate-100 text-xl font-ritual tracking-[0.2em] uppercase">The Singing Leaves</h2>
+</div>
+<div class="flex gap-10">
+<a class="text-parchment/30 hover:text-parchment transition-all scale-125" href="#"><span class="material-symbols-outlined">raven</span></a>
+<a class="text-parchment/30 hover:text-parchment transition-all scale-125" href="#"><span class="material-symbols-outlined">air</span></a>
+<a class="text-parchment/30 hover:text-parchment transition-all scale-125" href="#"><span class="material-symbols-outlined">water_drop</span></a>
+</div>
+<div class="text-center md:text-right">
+<p class="text-[10px] parchment-text opacity-30 uppercase tracking-[0.4em]">
+                    EST. MMXII • BEYOND ALL RIGHTS RESERVED • CARVED IN BARK
+                </p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
