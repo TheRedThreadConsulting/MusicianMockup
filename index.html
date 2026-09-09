@@ -225,5 +225,22 @@
 </div>
 </footer>
 </div>
+<script>
+    const menuBtn = document.getElementById('menu-toggle');
+    const nav = document.getElementById('mobile-menu');
 
+    menuBtn.addEventListener('click', () => {
+        // Toggles the menu visibility on mobile while keeping desktop styles intact
+        nav.classList.toggle('hidden');
+        nav.classList.toggle('absolute');
+        nav.classList.toggle('top-[72px]'); // Positions it just below the header
+        nav.classList.toggle('left-0');
+        nav.classList.toggle('w-full');
+        nav.classList.toggle('bg-background-dark');
+        nav.classList.toggle('flex-col');
+        nav.classList.toggle('py-8');
+        nav.classList.toggle('border-b');
+        nav.classList.toggle('border-white/5');
+    });
+</script>
 </body></html>
