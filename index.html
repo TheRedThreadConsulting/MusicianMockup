@@ -73,9 +73,9 @@
             </nav>
             
             <div class="flex items-center gap-4">
-                <button aria-label="Toggle theme" class="p-2 rounded bg-white/5 hover:bg-white/10 transition-all text-parchment">
-                    <span class="material-symbols-outlined">fluid</span>
-                </button>
+              <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded bg-white/5 hover:bg-white/10 transition-all text-parchment">
+    <span class="material-symbols-outlined">fluid</span>
+              </button>
                 <button id="menu-toggle" aria-label="Open navigation menu" class="md:hidden p-2 text-slate-100">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
@@ -276,6 +276,13 @@
                 audio.pause();
                 playIcon.textContent = 'play_arrow'; 
             }
+            // --- 3. Theme Toggle ---
+        const themeBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        themeBtn.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+            });
         });
     </script>
 </body>
