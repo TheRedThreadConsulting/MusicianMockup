@@ -246,6 +246,7 @@
 
     <!-- JavaScript placed safely at the very bottom -->
     <script>
+    <script>
         // --- 1. Mobile Menu Toggle ---
         const menuBtn = document.getElementById('menu-toggle');
         const nav = document.getElementById('mobile-menu');
@@ -276,13 +277,14 @@
                 audio.pause();
                 playIcon.textContent = 'play_arrow'; 
             }
-            // --- 3. Theme Toggle ---
+        }); // <-- THIS bracket closes the play button logic!
+
+        // --- 3. Theme Toggle ---
         const themeBtn = document.getElementById('theme-toggle');
         const htmlElement = document.documentElement;
 
         themeBtn.addEventListener('click', () => {
-        htmlElement.classList.toggle('dark');
-            });
+            htmlElement.classList.toggle('dark');
         });
     </script>
 </body>
